@@ -3,8 +3,12 @@
 
 **BU Fall 2024 EC311**
 
-Group 10: AJ Chiaravalloti, Maria Davey, Bryan Lam, and Kelvin Huang
+Morse Code Translator
+Team 10: AJ Chiaravalloti, Maria Davey, Bryan Lam, and Kelvin Huang
 
+# Overview of the Project
+
+Our project takes an input of Morse code, a series of dots and dashes, and translated them into their respective letter, number, or symbol based on International Telecommunications Union standards. We used four buttons: dot, dash, reset, and send
 
 # Project Requirements
 
