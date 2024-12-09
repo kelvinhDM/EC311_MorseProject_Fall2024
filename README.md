@@ -39,6 +39,8 @@ After downloading all v-files and the constraint files into a project, set Morse
 
 We tested our project's code via testbench to test the behavior of the code.
 
+The testbench we used can be found under the Verilog Testbenches folder with the name **morsecode_tb.v**.
+
 The rest of the testing was done by pushing the bitstream generated to the FPGA board and manually testing the Morse code tree.
 
 # Video
