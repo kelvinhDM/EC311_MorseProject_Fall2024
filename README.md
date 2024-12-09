@@ -23,9 +23,9 @@ After downloading all v-files and the constraint files into a project, set Morse
 
 **GetCode.v -** accepts the clean button inputs and the clock input. At the positive edge of the    clock, it checks the input. If a dot or dash is inputted, it will check the current input (blank, E, T, etc.) and iterate to the next letter/number/etc. value based on the current value. If send is pressed, it will assign the temporary letter value to a current letter (code) value, which will be outputted. Note that the temporary letter value (temp_letter) is also outputted. If reset is pressed, all output variables will be set back to "blank".
 
-**converter.v -** accepts the temp_letter (NOT the code) value mentioned in GetCode, along with the clock and on-off power switch. At the positive edge of the lock, if the power switch is on the temp_letter will be put into a case statement. Each letter and number corresponds to a seven-segment letter or number display. Therefore, as the user enters the code, the case statement will be called and the proper seven-segment letter/number outputed (without needing to be sent).
+**converter.v -** accepts the temp_letter (NOT the code) value mentioned in GetCode, along with the clock and on-off power switch. At the positive edge of the lock, if the power switch is on the temp_letter will be put into a case statement. Each letter and number corresponds to a seven-segment letter or number display. Therefore, as the user enters the code, the case statement will be called and the proper seven-segment letter/number output (without needing to be sent).
 
-**vgatop.v -** accepts the VGA power switch, the clock, the reset button, and the code from GetCode (NOT the temp_letter). The clock is divided, and at the positive edge of this new clock, if the vga power switch is on, certain LEDs will be turned on (with color white). Which LEDs should be turned on is determined by the VGA controller. Note the vgatop also outputs and h_sync and v_sync value (needed for the VGA), which comes from the vga controller.
+**vgatop.v -** accepts the VGA power switch, the clock, the reset button, and the code from GetCode (NOT the temp_letter). The clock is divided, and at the positive edge of this new clock, if the vga power switch is on, certain LEDs will be turned on (with color white). Which LEDs should be turned on is determined by the VGA controller. Note the vgatop also outputs and h_sync and v_sync value (needed for the VGA), which come from the VGA controller.
 
 **vgacontroller.v -** accepts the code, new clock, and reset button from before. At the positive edge of the new clock, the code will be ran through a case statement. Depending on the code, six boxes will be assigned to six registers. Each box is assigned an inequality, which sets the upper and lower width and height. Each part of the case statement corresponds to different letter/number/symbol dimensions. These registers are assigned to wires, and these wires' dimensions set which LEDs should be on. This led_on value is outputted, along with the h_sync and v_sync values needed for setting up the VGA.
 
@@ -35,8 +35,14 @@ After downloading all v-files and the constraint files into a project, set Morse
 
 **constraints_b -** used to generate the bitstream. Assigns the clock, switches, buttons, LEDs, seven-segment display, and VGA values to respective parts of the FPGA.
 
-***ADD MARIA'S TESTBENCH INFO***
+## Testing Our Code
 
-***NEED TO ADD VIDEO "LINK" (THEY MAY WANT US TO PUT THE VIDEO IN THE README SOMEHOW???***
+We tested our project's code via testbench to test the behavior of the code.
 
-***MAYBE MENTION WE GOT THE VGA FILES FROM ABIN AND WHERE WE GOT THE SEVEN SEGMENT DISPLAY STUFF***
+The rest of the testing was done by pushing the bitstream generated to the FPGA board and manually testing the Morse code tree.
+
+# Video Link: https://drive.google.com/file/d/19ocfhHyfCqEcQr_wvJCZjH5T48VY_3TC/view?usp=sharing
+
+# References:
+1. The alphabet system utilized for our seven-segment display: https://fakoo.de/en/siekoo.html
+2. The custom VGA letters were created off the basis of VGA Tutorial provided by the course.
