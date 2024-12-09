@@ -1,4 +1,4 @@
-# EC311_MorseProject_Fall2024
+y# EC311_MorseProject_Fall2024
 
 
 **BU Fall 2024 EC311**
@@ -8,7 +8,7 @@ Team 10: AJ Chiaravalloti, Maria Davey, Bryan Lam, and Kelvin Huang
 
 # Overview of the Project
 
-Our project takes an input of Morse code, a series of dots and dashes, and translated them into their respective letter, number, or symbol based on International Telecommunications Union standards. We used four buttons: dot, dash, reset, and send
+Our project takes an input of Morse code, a series of dots and dashes, and translated them into their respective letter, number, or symbol based on International Telecommunications Union standards. We used four buttons: dot, dash, reset, and send to allow a user to input their desired Morse code combination. Our project then uses VGA display output and seven segment display built into the FGPA to display the equivalent ASCII character of the code combination. VGA displays the combination's translated character upon send button press, while the seven segment display will show the current character based on the sequence of dots/dashes that the user has pressed regardless of send input.
 
 # Project Requirements
 
