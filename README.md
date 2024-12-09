@@ -35,7 +35,7 @@ After downloading all v-files and the constraint files into a project, set Morse
 
 **constraints_b -** used to generate the bitstream. Assigns the clock, switches, buttons, LEDs, seven-segment display, and VGA values to respective parts of the FPGA.
 
-## Testing Our Code
+### Testing Our Code
 
 We tested our project's code via testbench to test the behavior of the code.
 
