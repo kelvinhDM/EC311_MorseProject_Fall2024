@@ -41,7 +41,9 @@ We tested our project's code via testbench to test the behavior of the code.
 
 The rest of the testing was done by pushing the bitstream generated to the FPGA board and manually testing the Morse code tree.
 
-# Video Link: https://drive.google.com/file/d/19ocfhHyfCqEcQr_wvJCZjH5T48VY_3TC/view?usp=sharing
+# Video
+
+Link: [https://drive.google.com/file/d/19ocfhHyfCqEcQr_wvJCZjH5T48VY_3TC/view?usp=sharing](https://drive.google.com/file/d/19ocfhHyfCqEcQr_wvJCZjH5T48VY_3TC/view?usp=sharing)
 
 # References:
 1. The alphabet system utilized for our seven-segment display: https://fakoo.de/en/siekoo.html
