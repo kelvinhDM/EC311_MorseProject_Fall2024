@@ -43,6 +43,8 @@ The testbench we used can be found under the Verilog Testbenches folder with the
 
 The rest of the testing was done by pushing the bitstream generated to the FPGA board and manually testing the Morse code tree.
 
+<img width="720" alt="Screenshot 2024-12-09 at 5 17 42 PM" src="https://github.com/user-attachments/assets/61fa55d8-64cf-4186-b5de-2bdc569274da">
+
 # Video
 
 Link: [https://drive.google.com/file/d/19ocfhHyfCqEcQr_wvJCZjH5T48VY_3TC/view?usp=sharing](https://drive.google.com/file/d/19ocfhHyfCqEcQr_wvJCZjH5T48VY_3TC/view?usp=sharing)
