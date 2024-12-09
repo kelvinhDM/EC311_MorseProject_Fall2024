@@ -3,9 +3,7 @@
 
 **BU Fall 2024 EC311**
 
-Morse Code Translator
-
-Team 10: AJ Chiaravalloti, Maria Davey, Bryan Lam, and Kelvin Huang
+<img width="1212" alt="Screenshot 2024-12-09 at 8 44 30 AM" src="https://github.com/user-attachments/assets/e5d48d65-68db-4845-bb12-7f9a2468af85">
 
 # Overview of the Project
 
