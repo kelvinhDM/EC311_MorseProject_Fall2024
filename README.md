@@ -36,3 +36,5 @@ After downloading all v-files and the constraint files into a project, set Morse
 **clkdivider.v -** standard clock divider for the FPGA clock.
 
 **constraints_b -** used to generate bitstream. Assigns the clock, switches, buttons, LEDs, seven segment display, and VGA values to respective parts of the FPGA.
+
+***ADD MARIA'S TESTBENCH INFO***
